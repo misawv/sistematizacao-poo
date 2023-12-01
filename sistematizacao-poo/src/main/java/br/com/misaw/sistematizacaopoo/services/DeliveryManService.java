@@ -44,7 +44,7 @@ public class DeliveryManService implements IDeliveryManService {
 
         if (deliveryMan.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND,
-                    "Nenhum usuário encontrado");
+                    "Nenhum usuário atualizado");
         }
 
         return this.repository.save(model);

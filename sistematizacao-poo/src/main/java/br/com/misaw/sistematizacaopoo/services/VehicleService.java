@@ -45,7 +45,7 @@ public class VehicleService implements IVehicleService {
          
         if(vehicle.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND,
-                    "Nenhum veículo encontrado");
+                    "Nenhum veículo atualizado");
         }
         
        return this.repository.save(model);

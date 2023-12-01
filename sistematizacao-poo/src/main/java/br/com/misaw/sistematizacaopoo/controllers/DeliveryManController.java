@@ -48,7 +48,7 @@ public class DeliveryManController {
 
         service.update(request);
 
-        return ResponseEntity.status(HttpStatus.OK).body("Usuário criado com sucesso!");
+        return ResponseEntity.status(HttpStatus.OK).body("Usuário atualizado com sucesso!");
     }
 
     @DeleteMapping("/{id}")

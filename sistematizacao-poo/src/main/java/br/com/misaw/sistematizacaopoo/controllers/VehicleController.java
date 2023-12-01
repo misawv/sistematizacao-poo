@@ -47,7 +47,7 @@ public class VehicleController {
 
         service.update(request);
 
-        return ResponseEntity.status(HttpStatus.OK).body("Veículo criado com sucesso!");
+        return ResponseEntity.status(HttpStatus.OK).body("Veículo atualizado com sucesso!");
     }
 
     @DeleteMapping("/{id}")
