@@ -51,6 +51,6 @@ cd backend
 ./mvnw spring-boot:run
 ```
 
-# Autor
+## Autor
 
 Rafaela Souza Farias
