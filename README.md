@@ -41,14 +41,12 @@ O objetivo é escolher apenas UM dos problemas acima para resolver, sendo ele o 
 Pré-requisitos: Java 17
 
 ```bash
-# clonar repositório
+# Clonar o repositório
 git clone https://github.com/misawv/sistematizacao-poo.git
 
-# entrar na pasta do projeto back end
-cd backend
+# Acessar a pasta do projeto
+cd sistematizacao-poo
 
-# executar o projeto
-./mvnw spring-boot:run
 ```
 
 ## Autor
