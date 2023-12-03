@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Uma API REST simples para controle de entregadores da empresa ficticia Dianome
+Uma API REST simples para controle de entregadores da empresa fictícia Dianome
 
 ## Funcionalidades
 
