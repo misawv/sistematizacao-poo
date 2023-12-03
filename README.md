@@ -3,41 +3,24 @@
 
 # Sobre o projeto
 
-A empresa de entregas Dianome está precisando de um software simples para gerenciar algumas de suas operações. Seus três principais problemas são: 
+Uma API REST simples para controle de entregadores da empresa ficticia Dianome
 
-1 - Controlar os entregadores (cpf, nome, capacidade do veículo) 
+## Funcionalidades
 
-2 - Controlar os pacotes (código de rastreamento, data de recebimento, status, entregador e data de entrega)
+- Cadastro, listagem, atualização e deleção de entregadores
+- Cadastro, listagem, atualização e deleção de veículos
 
-3 - Controlar as reclamações (nome do reclamante, telefone, descrição da reclamação, código de rastreamento e descrição da solução)
+## Tecnologias utilizadas
 
-O objetivo é escolher apenas UM dos problemas acima para resolver, sendo ele o de número 1. Além disso será preciso desenvolver uma API REST usando o framework Spring Boot e o banco de dados (MySQL ou PostgreSQL). 
-
-## Requisições
-
-• Uma URI que recebe o formulário com as informações e efetua a gravação no banco de dados;
-
-• Uma URI para listar todos os itens;
-
-• Uma URI para apresentar os detalhes de um item específico a partir da sua identificação;
-
-• Uma URI que recebe o formulário com as alterações de um item, seu identificador e efetua a gravação no banco de dados;
-
-• Uma URI que recebe o identificador de um item e o remove do banco de dados.
-
-# Tecnologias utilizadas
-## Back end
 - Java
 - Spring Boot
 - JPA
 - Lombok
 - Maven
-- MySql
-- Postman
+- MySQL
 
-# Como executar o projeto
+## Como executar o projeto
 
-## Back end
 Pré-requisitos: Java 17
 
 ```bash
@@ -47,8 +30,32 @@ git clone https://github.com/misawv/sistematizacao-poo.git
 # Acessar a pasta do projeto
 cd sistematizacao-poo
 
+# Para iniciar a aplicação
+./mvnw spring-boot:run
+```
+
+## Documentação
+
+### Cadastrar um veículo
+
+```
+# Requisição
+
+POST /vehicle
+Content-Type: application/json
+
+{
+  "licensePlate" : "HOQ-8096",
+  "capacity" : 90.0,
+  "type" : "Moto"
+}
+
+# Resposta
+
+Status: 201 Created
 ```
 
 ## Autor
 
 Rafaela Souza Farias
+
